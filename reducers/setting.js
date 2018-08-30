@@ -1,14 +1,14 @@
 import { handleActions } from 'redux-actions'
 
 const initialState = {
-    account: '',
+    topBackground: false,
 }
 
 export default handleActions({
-    'set Account' (state, action) {
+    'set topBackground' (state, action) {
         return {
             ...state,
-            account: action.payload
+            topBackground: action.payload
         }
     }
 }, initialState)
